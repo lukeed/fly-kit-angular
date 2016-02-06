@@ -1,0 +1,25 @@
+{
+  "version": "1.0.0",
+  "name": "fly-angular",
+  "launch_path": "/index.html",
+  "description": "Jumpstart an Angular application with Fly!",
+  "icons": {
+    "128": "/images/touch/icon-128x128.png"
+  },
+  "developer": {
+    "name": "Luke Edwards",
+    "url": "https://lukeed.com"
+  },
+  "installs_allowed_from": [
+    "*"
+  ],
+  "default_locale": "en",
+  "permissions": {
+  },
+  "locales": {
+    "en": {
+      "name": "fly-angular",
+      "description": "Jumpstart an Angular application with Fly!"
+    }
+  }
+}
