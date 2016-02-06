@@ -1,0 +1,30 @@
+{
+	"scripts": {
+		"src": "src/**/*.js']",
+		"dest": "dist/js"
+	},
+	"styles": {
+		"src": "src/**/*.{sass,scss}",
+		"dest": "dist/css"
+	},
+	"images": {
+		"src": "src/assets/images/**/*.{jpg,png,gif}",
+		"dest": "dist/img"
+	},
+	"fonts": {
+		"src": "src/assets/fonts/**/*.*",
+		"dest": "dist/fonts"
+	},
+	"html": {
+		"src": "src/html/*.html",
+		"dest": "dist"
+	},
+	"templates": {
+		"src": "src/app/**/*.html",
+		"dest": "dist/js"
+	},
+	"extras": {
+		"src": "src/*.{txt,json,webapp,ico}",
+		"dest": "dist"
+	}
+}
