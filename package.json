@@ -1,0 +1,58 @@
+{
+  "name": "fly-ng-starter",
+  "version": "0.0.0",
+  "description": "Jumpstart an Angular application with Fly.",
+  "license": "MIT",
+  "repository": "lukeed/fly-ng-starter",
+  "author": {
+    "name": "Luke Edwards",
+    "email": "luke.edwards05@gmail.com",
+    "url": "https://lukeed.com"
+  },
+  "engines": {
+    "iojs": ">= 1.0.0",
+    "node": ">= 0.11.0"
+  },
+  "scripts": {
+    "build": "fly build",
+    "fly": "fly",
+    "serve": "fly build && fly serve",
+    "watch": "fly watch",
+    "test": "xo"
+  },
+  "keywords": [
+    "boilerplate",
+    "fly-plugin",
+    "starter",
+    "angular",
+    "webapp",
+    "app",
+    "web",
+    "kit",
+    "fly",
+    "ng"
+  ],
+  "dependencies": {
+    "angular": "^1.5.0",
+    "angular-component": "^0.0.7",
+    "angular-ui-router": "^0.2.17"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.10.0",
+    "fly": "^0.8.5",
+    "fly-autoprefixer": "^0.2.0",
+    "fly-babel": "^0.7.0",
+    "fly-htmlmin": "^1.0.0",
+    "fly-ng-templatecache": "^1.0.0",
+    "fly-rev": "^0.8.0",
+    "fly-sass": "^0.3.0",
+    "fly-uglify": "^1.0.0",
+    "fly-xo": "^1.0.0",
+    "xo": "*"
+  },
+  "xo": {
+    "ignore": [
+      "flyfile.js"
+    ]
+  }
+}
