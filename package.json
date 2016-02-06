@@ -1,9 +1,9 @@
 {
-  "name": "fly-ng-starter",
+  "name": "fly-angular",
   "version": "0.0.0",
   "description": "Jumpstart an Angular application with Fly.",
   "license": "MIT",
-  "repository": "lukeed/fly-ng-starter",
+  "repository": "lukeed/fly-angular",
   "author": {
     "name": "Luke Edwards",
     "email": "luke.edwards05@gmail.com",
