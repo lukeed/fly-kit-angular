@@ -1,6 +1,6 @@
 # Fly-NG-Starter [![Build Status](https://travis-ci.org/lukeed/fly-ng-starter.svg?branch=master)](https://travis-ci.org/lukeed/fly-ng-starter)
 
-> ng-Starter Kit for scaffolding a Web App with [Fly](https://git.io/fly) as the task runner.
+> Jumpstart an Angular application with [Fly](https://git.io/fly).
 
 ## Install
 ### [Yeoman](http://yeoman.io)
