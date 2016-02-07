@@ -110,7 +110,7 @@ export async function scripts() {
 			presets: ['es2015'],
 			sourceMaps: !isProd
 		})
-		.concat('main.min.js')
+		.concat('main.js')
 		.target(config.scripts.dest);
 
 	if (isWatch && isServer) {
@@ -124,12 +124,13 @@ export async function templates() {
 	await this.source(config.templates.src)
 		.ngTemplates({
 			standalone: true,
-			moduleName: 'app.templates'
+			moduleName: 'app.templates',
+			transformUrl: (url) => url.replace('src/app/', '')
 		})
 		.target(config.templates.dest);
 }
 
-// minify &
+// minify & optimize production js files
 export async function uglify() {
 	await this.source(`${config.scripts.dest}/*.js`)
 		.uglify({
@@ -145,11 +146,13 @@ export async function uglify() {
 		.target(config.scripts.dest);
 }
 
-// Compile and automatically prefix stylesheets
+// Compile & automatically prefix stylesheets
 export async function styles() {
 	await this
 		.source(config.styles.src)
-		.sass({outputStyle: 'compressed'})
+		.sass({
+			outputStyle: 'compressed'
+		})
 		.autoprefixer({
 			browsers: [
 				'ie >= 10',
@@ -163,7 +166,7 @@ export async function styles() {
 				'bb >= 10'
 			]
 		})
-		.concat('main.min.css')
+		.concat('main.css')
 		.target(config.styles.dest);
 
 	if (isWatch && isServer) {
