@@ -18,7 +18,7 @@
     "fly": "fly",
     "serve": "fly build && fly serve",
     "watch": "fly watch",
-    "test": "xo"
+    "test": "fly lint"
   },
   "keywords": [
     "boilerplate",
