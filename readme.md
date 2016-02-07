@@ -1,19 +1,16 @@
-# Fly-NG-Starter [![Build Status](https://travis-ci.org/lukeed/fly-ng-starter.svg?branch=master)](https://travis-ci.org/lukeed/fly-ng-starter)
+# Fly-Kit-Angular [![Build Status](https://travis-ci.org/lukeed/fly-ng-starter.svg?branch=master)](https://travis-ci.org/lukeed/fly-ng-starter)
 
 > Jumpstart an Angular application with [Fly](https://git.io/fly).
 
+## INCOMPLETE! Will be ready shortly
+
 ## Install
-### [Yeoman](http://yeoman.io)
-If you are looking for speed, convenience, and automation, there is a [Yeoman generator](https://github.com/lukeed/generator-fly-ng-starter) generator to help you get started with Fly.
+<!-- ### [Yeoman](http://yeoman.io) -->
+<!-- If you are looking for speed, convenience, and automation, there is a [Yeoman generator](https://github.com/lukeed/generator-fly-ng-starter) generator to help you get started with Fly. -->
 
 ### Manually
+```bash
 ```
-$ git clone --depth=1 https://github.com/lukeed/fly-ng-starter.git &&  cd fly-ng-starter
-$ rm -rf .git && git init
-$ npm install
-```
-
-You now have a fresh copy of this repo.
 
 ## Usage
 
