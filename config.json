@@ -1,6 +1,6 @@
 {
 	"scripts": {
-		"src": "src/**/*.js']",
+		"src": "src/**/*.js",
 		"dest": "dist/js"
 	},
 	"styles": {
