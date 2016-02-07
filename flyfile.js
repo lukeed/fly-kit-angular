@@ -51,7 +51,9 @@ export async function clean() {
 
 // Lint javascript
 export async function lint() {
-	await this.source(config.scripts.src).xo();
+	await this.source(config.scripts.src).xo({
+		globals: ['document', 'angular']
+	});
 }
 
 // Copy all images, compress them, then send to dest
