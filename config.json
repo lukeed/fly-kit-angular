@@ -4,7 +4,7 @@
 		"dest": "dist/js"
 	},
 	"styles": {
-		"src": "src/**/*.{sass,scss}",
+		"src": "src/**/*.scss",
 		"dest": "dist/css"
 	},
 	"images": {
