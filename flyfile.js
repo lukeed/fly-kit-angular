@@ -178,7 +178,7 @@ export async function styles() {
 
 // Revision asset names (Cache-busting)
 export async function rev() {
-	const src = ['scripts', 'styles', 'images'].map(type => `${paths[type].dest}/**/*`);
+	const src = ['scripts', 'styles', 'images'].map(type => `${config[type].dest}/**/*`);
 	return this.source(src).rev({
 		base: config.html.dest,
 		replace: true
