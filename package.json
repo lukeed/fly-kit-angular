@@ -1,6 +1,6 @@
 {
   "name": "fly-kit-angular",
-  "version": "0.0.0",
+  "version": "0.7.0",
   "description": "Jumpstart an Angular application with Fly.",
   "license": "MIT",
   "repository": "lukeed/fly-kit-angular",
