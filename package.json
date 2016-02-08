@@ -61,6 +61,7 @@
     "fly-browserify": "^1.0.0",
     "fly-htmlmin": "^1.0.0",
     "fly-ng-templatecache": "^1.0.0",
+    "fly-precache": "^1.0.0",
     "fly-rev": "^0.8.0",
     "fly-sass": "^0.3.0",
     "fly-uglify": "^1.0.0",
