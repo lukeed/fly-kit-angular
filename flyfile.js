@@ -107,10 +107,11 @@ export async function extras() {
 
 // Compile scripts
 export async function scripts() {
-	await this.source(config.scripts.src)
-		.babel({
-			presets: ['es2015'],
-			sourceMaps: !isProd
+	await this.source('src/main.js')
+		.browserify({
+			transform: require('babelify').configure({
+				presets: 'es2015'
+			})
 		})
 		.concat('main.js')
 		.target(config.scripts.dest);
@@ -122,6 +123,7 @@ export async function scripts() {
 	}
 }
 
+// Extract ng template files & apply $templateCache
 export async function templates() {
 	await this.source(config.templates.src)
 		.ngTemplates({
