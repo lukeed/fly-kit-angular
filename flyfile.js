@@ -36,8 +36,9 @@ export async function build() {
 	isProd = true;
 	isWatch = false;
 	await this.start('clean');
-	await this.start(['lint', 'images', 'fonts', 'templates', 'styles', 'html', 'extras'], {parallel: true});
-	await this.start(['scripts', 'rev'], {parallel: false});
+	await this.start(['lint', 'images', 'fonts', 'styles', 'html', 'extras'], {parallel: true});
+	await this.start(['templates', 'scripts', 'cache']);
+	// await this.start('rev'); // needs before 'cache'
 }
 
 // ###
@@ -52,7 +53,7 @@ export async function clean() {
 // Lint javascript
 export async function lint() {
 	await this.source(config.scripts.src).xo({
-		globals: ['document', 'angular']
+		globals: ['document', 'angular', 'navigator', 'window']
 	});
 }
 
@@ -185,6 +186,20 @@ export async function rev() {
 		base: config.html.dest,
 		replace: true
 	});
+}
+
+// Cache assets so they are available offline!
+export function * cache() {
+	const dir = config.html.dest;
+	const ext = '{js,html,css,png,jpg,gif}';
+
+	yield this
+		.source(`${dir}/**/*.${ext}`)
+		.precache({
+			root: dir,
+			cacheId: 'fly-kit-angular',
+			stripPrefix: dir
+		});
 }
 
 // Launch loacl serve at develop directory
